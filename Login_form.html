@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login Form</title>
+    <style>
+        body{
+            background-color:rgb(1, 1, 30);
+        }
+        .box1{
+            width:320px;
+            height:500px;
+            background-color: rgba(75, 74, 74, 0.4);
+            border-radius:3%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); <!-- doubt -->
+            backdrop-filter: blur(5px);
+            box-shadow: 0px 0px 50px 0.3px #0d0d0e;
+            color:aliceblue;
+            box-sizing: border-box;
+            padding: 30px;
+        }
+        .box2{
+            width:170px;
+            height:170px;
+            background-image:linear-gradient(rgb(255,0,101),rgb(137,9,127));
+            border-radius:50%;
+            /* margin-left:515px; */
+            /* margin-top: 45px; */
+            margin-left:35%;
+            margin-top: 4%;
+        }
+        .box3{
+            width:170px;
+            height:170px;
+            background-image:linear-gradient(rgb(100, 98, 236),rgb(31, 5, 100));
+            border-radius:50%;
+            /* margin-left:790px;
+            margin-top: 260px; */
+            margin-left:53.8%;
+            margin-top: 19%;
+        }
+        p{
+            text-align:center;
+            font-size:230%;
+        }
+        .lable{
+            font-size: 130%;
+        }
+        input[type=text],[type=password]{
+            width: 100%;
+            padding: 12px 20px;/*yaha pe hamne do padding diye hai, pahila wala virtical (top,down) padding and dudsara wala horizontal (left,right) padding, type="submit" ke jaise type="text" and type="password me by default text ye center alignment me nahi reheta, so to give horizontal (left,right) padding, we have to use second padding i.e. horizontal (left,right) padding , and also to give required height, we can use first padding i.e. vertical (top,down) padding as well."*/
+            margin: 8px 0;
+            /* display: inline-block; */
+            background-color: rgba(75, 74, 74, 0.4);
+            color: white;
+            /* border: 1px solid #ccc; */
+            border-radius: 8px;
+            box-sizing: border-box; /* doubt */
+            border: none;
+        }
+        input[type=submit]{
+            width: 100%;
+            padding: 15px; /* yaha pe hamne pehele ke jaise do padding nahi dale, means pahila ek virtical (top-down) padding and dusara wala horizontal (left and right) padding, kyunki ye type="submit" hai, jisme text already center alignment me hi hota hai, hence for width=100% or any %, i.e. 20%,50%,etc., also if you are giving measurement of width in 'px' to that submit button, then no need of second padding i.e. left,right wala, because text is already in center, so padding kya hi karega us ext ko, and if we have to give required height, we can use first padding i.e.top,down wala, but when we haven't gave any width equal to 100%  or for any % i.e. 20%,50%,etc., or we haven't gave measurment in 'px' to width of that button, then we can use second padding, not to keep the text whithin the button some 'px' away from the border of the button, but for increase the width of the button, as we haven't gave any separate width in '%' or in 'px' to the submit button, and also we can use first padding to give required height to the same submit button.*/
+            margin: 25px 0;
+            /* display: inline-block; */
+            background-color: white;
+            color: ;
+            /* border: 1px solid #ccc; */
+            border-radius: 8px;
+            box-sizing: border-box; /* doubt */
+            font-size: medium;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <p>Login Here</p>
+        <form><!-- doubt -->
+            <label class="lable" for="email">Email:</label><br>
+            <input id="id" type="text" name="email" size="8" placeholder="Email-ID" required><!-- doubt -->
+            <br><br>
+            <label class="lable" for="firstname">Password:</label><br>
+            <input id="password" type="password" name="password" size="8" placeholder="Enter Password" required>
+            <input id="password" type="submit" value="Log In" name="Login"><!-- doubt -->
+            <!-- <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label> -->
+        </form>
+
+    </div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>
